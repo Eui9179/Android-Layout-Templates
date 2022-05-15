@@ -1,2 +1,1 @@
-# Android-Layout-Templates
-my templates
+# Android Layout template
