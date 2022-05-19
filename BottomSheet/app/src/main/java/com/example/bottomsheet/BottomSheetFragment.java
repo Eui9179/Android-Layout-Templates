@@ -21,7 +21,6 @@ import org.w3c.dom.Text;
 import java.util.Objects;
 
 public class BottomSheetFragment extends BottomSheetDialogFragment {
-    Bundle bundle;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,9 +31,8 @@ public class BottomSheetFragment extends BottomSheetDialogFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        bundle = getArguments();
+        Bundle bundle = getArguments();
         TextView text = view.findViewById(R.id.text);
         text.setText(bundle.getString("test"));
     }
-
 }

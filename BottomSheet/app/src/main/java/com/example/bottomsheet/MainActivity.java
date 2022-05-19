@@ -14,9 +14,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.zip.Inflater;
 
 public class MainActivity extends AppCompatActivity {
-    View bottomSheetView;
     BottomSheetFragment bottomSheetFragment;
-    TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +25,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 bottomSheetFragment = new BottomSheetFragment();
+
                 Bundle bundle = new Bundle();
                 bundle.putString("test","test");
                 bottomSheetFragment.setArguments(bundle);
+
                 bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
             }
         });
-
     }
 }
