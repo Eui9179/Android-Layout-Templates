@@ -6,8 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BottomSheetFragment"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
-<!--    app:behavior_hideable="true"-->
-<!--    app:behavior_draggable="true"-->
 
     <TextView
         android:id="@+id/text"
@@ -15,6 +13,7 @@
         android:layout_height="400dp"
         android:gravity="center"
         android:text="asdf"
+        android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
